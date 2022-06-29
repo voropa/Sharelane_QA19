@@ -41,21 +41,6 @@ public class SignUpTests {
         continueButton.click();
 
         String testItemName = "Sauce Labs Bike Light";
-
-        WebElement itemTitle = driver.findElement(By.xpath(String.format("//div[text()='%s']/parent::a", testItemName)));
-        WebElement itemTitle = driver.findElement(By.xpath(String.format("//div[text()='%s']/parent::a", testItemName)));
-
-                driver.findElement(By.cssSelector("[name='zip_code']"));
-
-
-
-
-
-        Assert.assertEquals(isZipCodeDisplayed, true, "q3123234");
-        Assert.assertTrue(isZipCodeDisplayed,
-                "Zip code should not be displayed");
-        Assert.assertTrue(driver.findElement(By.name("first_name")).isDisplayed(),
-                "First Name input should be displayed");
     }
 
     @Test
@@ -86,26 +71,6 @@ public class SignUpTests {
         registerButton.click();
 
         SoftAssert softAssert = new SoftAssert();
-
-
-
-
-
-        WebElement CONFIRMATION = driver.findElement(By.);
-
-
-
-
-
-
-
-
-
-        softAssert.assertTrue(driver.findElements(By.name("first_name")).isEmpty(),
-                "There should be no First name field");
-        softAssert.assertTrue(CONFIRMATION.isDisplayed(),
-                "Confirmation message should be displayed");
-        softAssert.assertEquals(CONFIRMATION.getText(), "Account is created!", "There should be 'Account is created!");
 
 
         Thread.sleep(2000);
